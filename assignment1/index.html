@@ -19,8 +19,14 @@
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control" ng-model="menu">
          </div>
-         <div class="">
+         <div ng-style="customStyle.style">
            {{Msg}}
+         </div>
+         <!-- <span ng-class="{'color-red': Msg === 'Please enter data first', color-green': Msg === 'Enjoy!'}">
+           {{Msg}}
+         </span> -->
+         <div>
+
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkItems()">Check If Too Much</button>
