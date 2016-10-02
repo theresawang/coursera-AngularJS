@@ -1,0 +1,8 @@
+<div class="list-group-item" ng-repeat="item in menu.found">
+   <ul>
+       <li>{{item.short_name }}, {{item.name}}  {{menu.onRemove}}
+        <!-- <button class="btn btn-default" ng-click="menu.removeItem($index);">-->
+           <button ng-click="onRemove({index: $index});">Don't want this one!</button></li>
+       <li>{{ item.description }}</li>
+   </ul>
+</div>
