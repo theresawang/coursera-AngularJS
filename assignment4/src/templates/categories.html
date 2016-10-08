@@ -1,0 +1,8 @@
+<div class="list-group">
+    <div class="list-group-item selection" ng-repeat="item in $ctrl.items" ui-sref="categories.menuitems({catId: item.short_name})">
+        <div>
+            {{item.short_name}} - {{item.name}}
+            {{item.special_instructions}}
+        </div>
+    </div>
+</div>

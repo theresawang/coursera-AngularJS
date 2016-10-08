@@ -1,0 +1,31 @@
+body {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.items-panel {
+  width: 85%;
+  margin: 10px;
+  padding: 10px;
+  align-items:
+}
+
+.left-items {
+    width: 40%;
+    float: left;
+}
+.right-items {
+    margin-left: 30px;
+    width: 50%;
+    float: left;
+}
+
+.item-view {
+    color:#cc00cc;
+}
+
+div[ui-sref]:hover {
+  display: inline-block;
+  cursor: pointer;
+  background-color: lightblue;
+}

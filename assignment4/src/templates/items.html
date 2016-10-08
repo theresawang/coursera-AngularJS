@@ -1,0 +1,18 @@
+<div class="list-group menu-items">
+  <div class="list-group-item row" ng-repeat="menuitem in $ctrl.items">
+    <div class="col-sm-10">
+      <div class="item-view">
+        {{menuitem.short_name}} - {{menuitem.name}}
+        {{menuitem.description}}
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="item-view row" ng-if="menuitem.price_large">
+        {{menuitem.large_portion_name}} {{menuitem.price_large | currency}}
+      </div>
+      <div class="item-view row" ng-if="menuitem.price_small">
+        {{menuitem.small_portion_name}} {{menuitem.price_small | currency}}
+      </div>
+    </div>
+  </div>
+</div>
